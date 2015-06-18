@@ -24,9 +24,8 @@ module.exports = function(grunt) {
                     include            : ['test'],
                     skipModuleInsertion: false,
                     mainConfigFile     : "require-config.js",
-                    name               : "../bower_components/almond/almond",
                     out                : "dist/test.min.js", // output file
-                    //optimize           : 'uglify2' // optimise js code
+                    optimize           : 'uglify2' // optimise js code
                 }
             }
         },
@@ -42,6 +41,9 @@ module.exports = function(grunt) {
     //Testear posta
     grunt.loadNpmTasks('grunt-mocha-test');
     grunt.registerTask('test', ['mochaTest:test']);
+
+    grunt.loadNpmTasks('grunt-mocha-test');
+    grunt.registerTask('distTest', ['mochaTest:distTest']);
 
     //Buildear posta
     grunt.loadNpmTasks('grunt-contrib-requirejs');

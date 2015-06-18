@@ -6,5 +6,5 @@ requirejs.config({
     nodeRequire: require,
     paths      : {
         mathjs     : '../bower_components/mathjs/dist/math'
-     }
+    }
 });

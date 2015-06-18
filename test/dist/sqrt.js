@@ -2,13 +2,13 @@ var requirejs = require('requirejs'); //librería para usar el requirejs del cli
 var should = require('should'); //librería de asserts
 
 requirejs.config({
-    baseUrl    : 'dist',
+    baseUrl    : 'src',
     nodeRequire: require,
     paths      : {
-        test: 'test.min'
+        test: '../dist/test.min'
     }
 });
-describe('test.min.js', function() {
+describe('sqrt', function() {
     var Test;
     before(function(done) {
 
