@@ -13,7 +13,7 @@
 	  "node_modules",
 	  "bower_components"
 	],
-	"dependencies": {
+	"devdependencies": {
 		"mathjs": "1.7.0"
 	},
   "private": false
