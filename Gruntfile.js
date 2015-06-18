@@ -4,13 +4,13 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg      : grunt.file.readJSON('package.json'),
         mochaTest: {
-            test      : {
+            test    : {
                 options: {
                     reporter: 'spec'
                 },
                 src    : ['test/unit/**/*.js']
             },
-            distTest      : {
+            distTest: {
                 options: {
                     reporter: 'spec'
                 },
@@ -24,8 +24,9 @@ module.exports = function(grunt) {
                     include            : ['test'],
                     skipModuleInsertion: false,
                     mainConfigFile     : "require-config.js",
+                    name               : "../bower_components/almond/almond",
                     out                : "dist/test.min.js", // output file
-                    optimize           : 'uglify2' // optimise js code
+                    //optimize           : 'uglify2' // optimise js code
                 }
             }
         },
