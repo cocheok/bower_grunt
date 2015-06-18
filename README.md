@@ -1,5 +1,4 @@
-Demo de Bower + Grunt
-Grupo 3
+Demo de Bower + Grunt Para la comunidad
 
 Te simplifica la vida con 2 + 1 comandos:
 
@@ -13,3 +12,5 @@ verifica que anda:
 Si queres buildealo, te lo deja en /dist:
 
 	grunt build
+
+Adicional: La posta de la posta con requirejs y mocha :)
